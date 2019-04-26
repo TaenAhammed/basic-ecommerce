@@ -1,0 +1,119 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//****************** Custom CSS ***********************//
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar-brand {
+    font-family: "Pacifico", cursive;
+}
+
+.fashion-slider {
+    height: 100vh;
+}
+
+.slider {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+
+    &-1 {
+        background-image: linear-gradient(
+                to right bottom,
+                rgba(153, 153, 153, 0.3),
+                rgba(153, 153, 153, 0.3)
+            ),
+            url("../images/men.jpg");
+    }
+    &-2 {
+        background-image: linear-gradient(
+                to right bottom,
+                rgba(153, 153, 153, 0.3),
+                rgba(153, 153, 153, 0.3)
+            ),
+            url("../images/women.jpg");
+    }
+    &-3 {
+        background-image: linear-gradient(
+                to right bottom,
+                rgba(153, 153, 153, 0.3),
+                rgba(153, 153, 153, 0.3)
+            ),
+            url("../images/kids.jpg");
+    }
+
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+    }
+}
+
+.owl {
+    &-nav {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        font-size: 30px;
+        color: #fff;
+    }
+    &-prev {
+        margin-right: 30px;
+    }
+}
+
+.products {
+    &-area {
+        margin: 20px 0;
+    }
+
+    &-category {
+        margin: 100px 0;
+    }
+}
+
+.product-image {
+    height: 300px;
+}
+
+.login {
+    &-form {
+        margin-top: 100px;
+    }
+}
+
+.checkout {
+    &-products {
+        margin: 80px 0;
+    }
+
+    &-table {
+        margin-top: 80px;
+    }
+}
+
+.checkout {
+    &-image {
+        height: 80px;
+        width: 80px;
+    }
+}
