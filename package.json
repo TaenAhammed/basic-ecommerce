@@ -1,0 +1,16 @@
+{
+    "name": "e-commerce",
+    "version": "1.0.0",
+    "description": "An online shop",
+    "main": "index.js",
+    "homepage": "https://taenahammed.github.io/basic-ecommerce",
+    "scripts": {
+        "deploy": "gh-pages -d dist"
+    },
+    "author": "Taen Ahammed",
+    "license": "MIT",
+    "dependencies": {
+        "bootstrap": "^4.3.1",
+        "gh-pages": "^2.0.1"
+    }
+}
