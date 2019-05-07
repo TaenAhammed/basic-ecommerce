@@ -1,3 +1,13 @@
+$theme-colors: (
+    "primary": #531751
+);
+
+$border-radius: 0rem;
+$btn-border-radius: $border-radius;
+$btn-border-radius-sm: $border-radius;
+$input-border-width: 1px;
+$input-border-color: #531751;
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 //****************** Custom CSS ***********************//
@@ -8,8 +18,28 @@
     outline: 0;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 body {
     font-family: "Raleway", sans-serif;
+}
+
+.userBg {
+    background: url("../images/bg/nat-6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 86vh;
+}
+
+.signupBg {
+    background: url("../images/bg/nat-10.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 86vh;
 }
 
 .navbar {
@@ -79,6 +109,9 @@ body {
     &-prev {
         margin-right: 30px;
     }
+    &-dots {
+        height: 0;
+    }
 }
 
 .products {
@@ -91,8 +124,28 @@ body {
     }
 }
 
-.product-image {
-    height: 300px;
+.product {
+    position: relative;
+
+    overflow: hidden;
+    &-image {
+        height: 300px;
+    }
+
+    &-checkout {
+        position: absolute;
+        top: 32%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    &:hover &-checkout {
+        top: 60%;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%);
+    }
 }
 
 .login {
@@ -115,5 +168,18 @@ body {
     &-image {
         height: 80px;
         width: 80px;
+    }
+}
+
+.footer {
+    &-section {
+        background: #999;
+    }
+    &-link {
+        display: block;
+        color: #000;
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
